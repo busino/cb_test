@@ -1,0 +1,6 @@
+name: crossbar_env
+dependencies:
+- python=3.6
+- ipython
+- pip:
+  - crossbar  

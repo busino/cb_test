@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+
+      <link rel="shortcut icon" href="images/icon.png">
+      <title>Test Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script>
+         AUTOBAHN_DEBUG = false;
+      </script>
+       <script type="text/javascript" src="js/autobahn.min.js"></script>
+      <script type="text/javascript" src="js/test.js"></script>
+
+   </head>
+
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="#">Test Dashboard</a>
+        </div>
+      </div>
+</nav>
+
+<div class="container">
+
+<div class="row">
+
+<h1>Test Monitoring</h1>
+
+
+<div class="col-md-4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Camera</h2>
+  </div>
+  <div class="panel-body">
+	<button class="btn btn-default" id="camera_capture">Capture</button>
+	<br>
+	Image Captured: <span id="camera_captured">Not set.</span>
+	<br>
+    <div id="camera_image"></div>
+	<div class="heartbeat_status" id="camera_heartbeat_status"></div>Heartbeat:<input type="text" id="camera_heartbeat" value="Undefined">
+  </div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Calculation</h2>
+  </div>
+  <div class="panel-body">
+	<br>
+	Calculate Finished: <span id="calculate_finished">Not set.</span>
+	<br>
+    <div id="calculate_image"></div>
+    <div id="calculate_result"></div>
+	<div class="heartbeat_status" id="calculate_heartbeat_status"></div>Heartbeat:<input type="text" id="calculate_heartbeat" value="Undefined">
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">LoRa</h2>
+  </div>
+  <div class="panel-body">
+	Message Sent: <span id="lora_sent">Not set.</span>
+	<br>
+	<div class="heartbeat_status" id="lora_heartbeat_status"></div>Heartbeat:<input type="text" id="lora_heartbeat" value="Undefined">
+  </div>
+</div>
+</div>
+
+<div class="col-md-12">
+<h2>Connection</h2>
+<div id="connection_status">Undefined.</div>   
+<a href="" class="btn btn-default">Refresh</a>
+</div>
+
+
+</div>
+</div>
+
+   </body>
+</html>

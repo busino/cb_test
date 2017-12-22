@@ -1,0 +1,17 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+
+.heartbeat_status {
+	float: left;
+	margin: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: red;
+	border: 1px solid gray;
+}
+
